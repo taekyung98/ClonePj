@@ -152,9 +152,9 @@ export default class DashboardView extends Vue{
 
   //선택값 보내는 역할
   private selectorPush(){
-    this.$refs.date.chageDate(this.$route.query)
+    this.$refs.date.chageDate(this.$route.query.startDate, this.$route.query.endDate);
+    this.$refs.date
   }
-
 
 
   private reset(){
