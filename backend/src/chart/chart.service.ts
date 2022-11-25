@@ -80,7 +80,7 @@ export class ChartService {
         })
       : [];
 
-    //getChartList 생성 이전 aggregate 상태 void (return값이 없는 상태)
+    //getChartList 생성 이전 aggregate상태 void (return값이 없는 상태)
     const aggregate = await this.chartRepository.getChartList({
       startDate: Math.min(...dateDiffArray),
       endDate: Math.max(...dateDiffArray),
