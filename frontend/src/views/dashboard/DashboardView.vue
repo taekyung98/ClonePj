@@ -386,7 +386,9 @@ export default class DashboardView extends Vue {
         URL.revokeObjectURL(href);
       });
     } catch (e) {
+      console.log(e);
     } finally {
+      this.pending = false;
     }
   }
 }
